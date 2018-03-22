@@ -1,5 +1,16 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Poll
+    link(rel='stylesheet', href='css/style.css')
+  body
+    h1 What's your favorite programming language?
+    .poll_js
+      h2 60%
+      .square.green
+        h2 Javascript
+    .poll_php
+      h2 40%
+      .square.blue
+        h2 php
