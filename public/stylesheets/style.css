@@ -1,8 +1,30 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body
+{
+    background:blue;
+    color:white;
+    font-family: sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.square
+{
+    border: 10px solid;
+    display:block;
+    width: 200px;
+    height:200px;
 }
+
+.poll_js h2, .poll_php h2
+{
+    text-align:center;
+}
+
+.blue
+{
+    border-color:#90ADFB;
+}
+
+.green
+{
+    border-color:#00FFBD;
+}
+
