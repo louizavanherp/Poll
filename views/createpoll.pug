@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>create poll</title>
-</head>
-<body>
-    <form action="">
-        <label for="question">Question</label>
-        <input type="text" name=question>
-        
-        <label for="answer1">Answer 1</label>
-        <input type="text" name=answer1>
-        
-        <label for="answer2">Answer 2</label>
-        <input type="text" name=answer2>
-        
-        <button type=submit>create</button>
-    </form>
-</body>
-</html>
+extends layout
+
+block content
+    form
+      label(for='question' class='pollQuestion') Question
+      input(type='text', name='question')
+      label(for='answer1') Answer 1
+      input(type='text', name='answer1')
+      label(for='answer2') Answer 2
+      input(type='text', name='answer2')
+      button(type='submit' class='submitBtn') create
