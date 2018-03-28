@@ -1,6 +1,6 @@
 exports.kickstart = function(server){
 
-    console.log('we zijn gelinkt');
+    console.log('server kickstart');
 
     const Primus = require('primus');
     let primus = new Primus(server,{});
