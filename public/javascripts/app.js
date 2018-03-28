@@ -8,7 +8,7 @@ var primus = Primus.connect(url, {
 });
 
 primus.on('data', function(data){
-    var title = document.querySelector(".title--live");
+    var title = document.querySelector(".pollQuestion");
     //Nakijken of titel bestaat op pagina
     if(title){
         console.log(data);
