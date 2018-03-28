@@ -18,9 +18,9 @@ primus.on('data', function(data){
 //klikken -> data poll verplaatsen
 document.querySelector('').addEventListener("click", function(e){
     primus.write({ 
-        question: document.querySelector(''), 
-        answer1: '',
-        answer2: '',
+        question: document.querySelector('pollQuestion'), 
+        answer1: document.querySelector('answer1'),
+        answer2: document.querySelector('answer2'),
         });
     e.preventDefault();
 });
