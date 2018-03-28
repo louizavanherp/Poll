@@ -16,11 +16,12 @@ primus.on('data', function(data){
 });
 
 //klikken -> data poll verplaatsen
-document.querySelector('').addEventListener("click", function(e){
+document.querySelector('.submitBtn').addEventListener("click", function(e){
+    console.log('geklikt');
     primus.write({ 
-        question: document.querySelector('pollQuestion'), 
-        answer1: document.querySelector('answer1'),
-        answer2: document.querySelector('answer2'),
+        question: document.querySelector('.pollQuestion'), 
+        answer1: document.querySelector('.answer1'),
+        answer2: document.querySelector('.answer2'),
         });
     e.preventDefault();
 });
