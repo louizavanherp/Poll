@@ -1,16 +1,13 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='UTF-8')
-    title Poll
-    link(rel='stylesheet', href='../stylesheets/style.css')
-  body
-    h1 What's your favorite programming language?
-    .poll_js
-      h2 60%
-      .square.green
-        h2 Javascript
-    .poll_php
-      h2 40%
-      .square.blue
-        h2 php
+extends layout
+
+block content
+    .poll
+      h1.titlePoll
+      .poll1
+        h2 %
+        .square.green
+          h2.answer01
+      .poll2
+        h2 %
+        .square.blue
+          h2.answer02
